@@ -1,0 +1,6 @@
+D:\Users\rtoni\OneDrive\Projetos\C#\MP.DotNet6\MP.ApiDotNet6.Api\obj\Debug\net6.0\MP.ApiDotNet6.Api.csproj.AssemblyReference.cache
+D:\Users\rtoni\OneDrive\Projetos\C#\MP.DotNet6\MP.ApiDotNet6.Api\obj\Debug\net6.0\MP.ApiDotNet6.Api.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\rtoni\OneDrive\Projetos\C#\MP.DotNet6\MP.ApiDotNet6.Api\obj\Debug\net6.0\MP.ApiDotNet6.Api.AssemblyInfoInputs.cache
+D:\Users\rtoni\OneDrive\Projetos\C#\MP.DotNet6\MP.ApiDotNet6.Api\obj\Debug\net6.0\MP.ApiDotNet6.Api.AssemblyInfo.cs
+D:\Users\rtoni\OneDrive\Projetos\C#\MP.DotNet6\MP.ApiDotNet6.Api\obj\Debug\net6.0\MP.ApiDotNet6.Api.csproj.CoreCompileInputs.cache
+D:\Users\rtoni\OneDrive\Projetos\C#\MP.DotNet6\MP.ApiDotNet6.Api\obj\Debug\net6.0\MP.ApiDotNet6.Api.MvcApplicationPartsAssemblyInfo.cache

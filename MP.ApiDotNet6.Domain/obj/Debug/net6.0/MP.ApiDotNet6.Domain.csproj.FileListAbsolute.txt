@@ -1,0 +1,12 @@
+D:\Users\rtoni\OneDrive\Projetos\C#\MP.DotNet6\MP.ApiDotNet6.Domain\bin\Debug\net6.0\MP.ApiDotNet6.Domain.deps.json
+D:\Users\rtoni\OneDrive\Projetos\C#\MP.DotNet6\MP.ApiDotNet6.Domain\bin\Debug\net6.0\MP.ApiDotNet6.Domain.dll
+D:\Users\rtoni\OneDrive\Projetos\C#\MP.DotNet6\MP.ApiDotNet6.Domain\bin\Debug\net6.0\MP.ApiDotNet6.Domain.pdb
+D:\Users\rtoni\OneDrive\Projetos\C#\MP.DotNet6\MP.ApiDotNet6.Domain\obj\Debug\net6.0\MP.ApiDotNet6.Domain.csproj.AssemblyReference.cache
+D:\Users\rtoni\OneDrive\Projetos\C#\MP.DotNet6\MP.ApiDotNet6.Domain\obj\Debug\net6.0\MP.ApiDotNet6.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\rtoni\OneDrive\Projetos\C#\MP.DotNet6\MP.ApiDotNet6.Domain\obj\Debug\net6.0\MP.ApiDotNet6.Domain.AssemblyInfoInputs.cache
+D:\Users\rtoni\OneDrive\Projetos\C#\MP.DotNet6\MP.ApiDotNet6.Domain\obj\Debug\net6.0\MP.ApiDotNet6.Domain.AssemblyInfo.cs
+D:\Users\rtoni\OneDrive\Projetos\C#\MP.DotNet6\MP.ApiDotNet6.Domain\obj\Debug\net6.0\MP.ApiDotNet6.Domain.csproj.CoreCompileInputs.cache
+D:\Users\rtoni\OneDrive\Projetos\C#\MP.DotNet6\MP.ApiDotNet6.Domain\obj\Debug\net6.0\MP.ApiDotNet6.Domain.dll
+D:\Users\rtoni\OneDrive\Projetos\C#\MP.DotNet6\MP.ApiDotNet6.Domain\obj\Debug\net6.0\refint\MP.ApiDotNet6.Domain.dll
+D:\Users\rtoni\OneDrive\Projetos\C#\MP.DotNet6\MP.ApiDotNet6.Domain\obj\Debug\net6.0\MP.ApiDotNet6.Domain.pdb
+D:\Users\rtoni\OneDrive\Projetos\C#\MP.DotNet6\MP.ApiDotNet6.Domain\obj\Debug\net6.0\ref\MP.ApiDotNet6.Domain.dll

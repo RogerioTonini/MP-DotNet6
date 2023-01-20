@@ -1,0 +1,58 @@
+Visual Studio 2022 + API .NET CORE 6
+
+- Criando uma API
+
+-- Cadastrar Pessoa
+-- Cadastrar Produtos
+-- Cadastrar Compras
+
+-- Listar as Compras de cada Pessoa
+
+- Recursos Necessários:
+
+-- SDK do .NET 6
+-- DB Postgresql
+
+- Softwares necessários:
+
+-- Visual Studio 2022 ou VSCode
+-- PgAdmin4 - Admin Postgresql
+
+
+- Nome da Soluction: MP.ApiDotNet6
+
+- Projeto API - responsável pelas APIs que serão consumidas pelo POSTMAN neste caso.
+	Projeto deverá refenciar os projetos: INFRA.IOC.
+
+- Projeto APPLICATION - responsável pelos serviços
+	Projeto deverá refenciar os projetos: DOMAIN.
+
+- Projeto DOMAIN - responsável por armazenar as Entidades e as Interfaces.
+	Projeto é o PAI. Não pode referenciar nenhum, ao contrário, os outros é que referenciam ele.
+
+- Projeto INFRA.DATA - responsável por acessar o DB, Servidor de arquivos ou Bando de dados não relacional.
+	Projeto deverá refenciar os projetos: DOMAIN.
+
+- Projeto INFRA.IOC - responsável  por armazenar as Injeções de Dependência.
+	Projeto deverá refenciar os projetos: APPLICATION, DOMAIN e INFRA.DATA.
+
+**	Neste modelo, o Projeto API dependerá somente do Projeto INFRA.IOC, pois este já depende do INFRA.DATA.	Caso
+contrário, deveria criar uma nova dependência do Projeto DATA.DATA, sendo que este já depende de serviços de Banco
+de Dados externo.
+
+***	Para referenciar: Botão direito no Projeto / Add / Project Reference
+	Motivo: Neste modelo, o Projeto DOMAIN é que contém todo o espelho do DB e as Interfaces. 
+
+
+Criando as Classes / Entidades:
+
+- Person - 
+
+
+- Instalar no Projeto INFRA.DATA os pacotes necessários para conexão com Banco de Dados MS-SQL
+
+** Botão direito no Projeto / Manage NuGet Packages 
+
+- Criar uma pasta chamada Context
+
+- Criar classe para CONEXÃO ao DB (Esta classe por boas praticas deve ser o nome do projeto).

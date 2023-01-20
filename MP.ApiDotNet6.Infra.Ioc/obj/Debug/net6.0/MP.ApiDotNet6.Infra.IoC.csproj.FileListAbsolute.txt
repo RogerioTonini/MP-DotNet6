@@ -1,0 +1,5 @@
+D:\Users\rtoni\OneDrive\Projetos\C#\MP.DotNet6\MP.ApiDotNet6.Infra.Ioc\obj\Debug\net6.0\MP.ApiDotNet6.Infra.IoC.csproj.AssemblyReference.cache
+D:\Users\rtoni\OneDrive\Projetos\C#\MP.DotNet6\MP.ApiDotNet6.Infra.Ioc\obj\Debug\net6.0\MP.ApiDotNet6.Infra.IoC.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\rtoni\OneDrive\Projetos\C#\MP.DotNet6\MP.ApiDotNet6.Infra.Ioc\obj\Debug\net6.0\MP.ApiDotNet6.Infra.IoC.AssemblyInfoInputs.cache
+D:\Users\rtoni\OneDrive\Projetos\C#\MP.DotNet6\MP.ApiDotNet6.Infra.Ioc\obj\Debug\net6.0\MP.ApiDotNet6.Infra.IoC.AssemblyInfo.cs
+D:\Users\rtoni\OneDrive\Projetos\C#\MP.DotNet6\MP.ApiDotNet6.Infra.Ioc\obj\Debug\net6.0\MP.ApiDotNet6.Infra.IoC.csproj.CoreCompileInputs.cache
