@@ -8,13 +8,13 @@ namespace MP.ApiDotNet6.Domain.Entities
     public sealed class Person
     {
         // Criação de atributos
-        // Confira-se como <private set> para que não sejam acessados fora da classe
+        // Entenda como <private set> para que não sejam acessados fora da classe
         public int Id { get; private set; }
         public string Name { get; private set; }
         public string Document { get; private set; }
         public string PhoneCel { get; private set; }
 
-        // Criando o relacionamento de 1 para N
+        // Criando o relacionamento de 1 para N Purchase (Compra)
         public ICollection<Purchase> Purchases { get; set; }
 
         /* Construtor que valida as informações fornecidas pelo usuário.

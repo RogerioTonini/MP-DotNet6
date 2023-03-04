@@ -13,8 +13,8 @@ namespace MP.ApiDotNet6.Domain.Entities
         public int ProductId { get; private set; }
         public int PersonId { get; private set; }
         public DateTime DatePurchase { get; private set; }
-
-        /* Declaração de classes virtuais Person e Purchase.
+        /*
+         * Declaração de classes virtuais Person e Purchase.
          * 
          * Regra de Negócio:
          * Uma Purchase (compra) necessita de uma Person (pessoa) e um Product (produto)
@@ -27,29 +27,30 @@ namespace MP.ApiDotNet6.Domain.Entities
 
         /* Construtor que valida as informações fornecidas pelo usuário.
          * Utilização: INSERT */
-#pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
-        public Purchase(int productId, int personId)
-#pragma warning restore CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
+//#pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
+        public Purchase(int productId, int personId, DateTime? datePurchase)
+//#pragma warning restore CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
         {
-            PurchaseValidation(productId, personId);
+            PurchaseValidation(productId, personId, datePurchase);
         }
 
         /* Construtor que valida as informações fornecidas pelo usuário.
          * Utilização: UPDATE */
-#pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
-        public Purchase(int id, int productId, int personId)
-#pragma warning restore CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
+//#pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
+        public Purchase(int id, int productId, int personId, DateTime? datePurchase)
+//#pragma warning restore CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
         {
             DomainValidationException.When(Id < 0, "ID inválido!");
             Id = id;
-            PurchaseValidation(productId, personId);
+            PurchaseValidation(productId, personId, datePurchase);
         }
 
         // Método responsável pelas validações das informações, de acordo com as REGRAS DE NEGÓCIO.
-        private void PurchaseValidation(int productId, int personId)
+        private void PurchaseValidation(int productId, int personId, DateTime? date)
         {
             DomainValidationException.When(productId < 0, "Id do Produto deve ser informado!");
             DomainValidationException.When(personId < 0, "Id do Cliente deve ser informado!");
+            DomainValidationException.When(!date.HasValue, "Data da compra deve ser informada!");
 
             ProductId = productId;
             PersonId = personId;

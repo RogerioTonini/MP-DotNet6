@@ -2,9 +2,6 @@
 {
     public class ApplicationDbContext : DbContext
     {
-        public ApplicationDbContext()
-        {
-        }
         // Este construtor recebe da classe PAI as informações para conexão ao DB
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
@@ -19,11 +16,11 @@
          * Para realizar este procedimentos foi criada uma pasta chamada Maps
          * e dentro dela será criada uma classe para cada Tabela da aplicação
          */
-        public DbSet<Person> Tb_Pessoa { get; set; }
-        public DbSet<Product> Tb_Product { get; set; }
-        public DbSet<Purchase> Tb_Purchase { get; set; }
+        public DbSet<Person> People { get; set; }
+        public DbSet<Product> Product { get; set; }
+        public DbSet<Purchase> Purchase { get; set; }
         /*
-         * Método que sobre escreve as configurações DESTA CLASSE.
+         * Método que sobreescreve as configurações DESTA CLASSE.
          */
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

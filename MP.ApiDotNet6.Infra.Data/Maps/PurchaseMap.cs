@@ -11,15 +11,15 @@ namespace MP.ApiDotNet6.Infra.Data.Maps
         public void Configure(EntityTypeBuilder<Purchase> builder)
         {
             // Mapeando a Tabela qdo os nomes das Entidades são diferentes do nome das colunas do DB
-            builder.ToTable("TB_COMPRA");
+            builder.ToTable("COMPRA");
 
             builder.HasKey(x => x.Id);
 
             builder.Property(x => x.ProductId)
-                .HasColumnName("ID_PRODUTO");
+                .HasColumnName("IDPRODUTO");
 
             builder.Property(x => x.PersonId)
-                .HasColumnName("ID_PESSOA");
+                .HasColumnName("IDPESSOA");
 
             builder.Property(x => x.DatePurchase)
                 .HasColumnName("DATACOMPRA");

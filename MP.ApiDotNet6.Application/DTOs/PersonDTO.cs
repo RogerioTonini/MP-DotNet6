@@ -1,6 +1,6 @@
 ﻿namespace MP.ApiDotNet6.Application.DTOs
 {
-    // Fará a ponte entre a aplicação e o usuário ao digitar os dados
+    // Fará a ponte entre a aplicação e o mundo externo
     public class PersonDTO
     {
         public int Id { get; set; }

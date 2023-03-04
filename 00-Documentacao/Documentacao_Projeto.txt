@@ -37,22 +37,54 @@ Visual Studio 2022 + API .NET CORE 6
 	Projeto deverá refenciar os projetos: APPLICATION, DOMAIN e INFRA.DATA.
 
 **	Neste modelo, o Projeto API dependerá somente do Projeto INFRA.IOC, pois este já depende do INFRA.DATA.	Caso
-contrário, deveria criar uma nova dependência do Projeto DATA.DATA, sendo que este já depende de serviços de Banco
+contrário, deveria criar uma nova dependência do Projeto DATA, sendo que este já depende de serviços de Banco
 de Dados externo.
 
 ***	Para referenciar: Botão direito no Projeto / Add / Project Reference
 	Motivo: Neste modelo, o Projeto DOMAIN é que contém todo o espelho do DB e as Interfaces. 
 
+- Criar as Classes / Entidades: Person, Product e Purchase
 
-Criando as Classes / Entidades:
+- Criar as tabelas no SGBD PostgreSQL
 
-- Person - 
+-- Tabela PESSOA
 
+CREATE TABLE IF NOT EXISTS PESSOA(
+	IDPESSOA SERIAL PRIMARY KEY,
+	NOME VARCHAR(100),
+	DOCUMENTO VARCHAR(20),
+	CELULAR VARCHAR(20)
+);
 
-- Instalar no Projeto INFRA.DATA os pacotes necessários para conexão com Banco de Dados MS-SQL
+-- Tabela PRODUTO
 
-** Botão direito no Projeto / Manage NuGet Packages 
+CREATE TABLE IF NOT EXISTS PRODUTO(
+	IDPRODUTO SERIAL PRIMARY KEY,
+	NOME VARCHAR(100),
+	CODERP VARCHAR(10),
+	PRECO NUMERIC (10,2)
+);
+
+-- Tabela COMPRA
+
+CREATE TABLE IF NOT EXISTS COMPRA(
+	IDPCOMPRA SERIAL PRIMARY KEY,
+	IDPRODUTO INT,
+	IDPESSOA INT,
+	DATACOMPRA DATE,
+	CONSTRAINT FK_PESSOA_COMPRA FOREIGN KEY(IDPESSOA) REFERENCES PESSOA(IDPESSOA),
+	CONSTRAINT FK_PRODUTO_COMPRA FOREIGN KEY(IDPRODUTO) REFERENCES PRODUTO(IDPRODUTO)
+);
+
+- Projeto: MP.ApiDotNet6.Infra.Data
+
+- Instalar os pacotes para conexão com Banco de Dados PostgreSQL (Manage NuGet Packages)
+
+Microsoft.EntityFrameworkCore                v.6.0.1
+Npgsql.EntityFrameworkCore.PostgreSQL        v.6.0.1
+Npgsql.EntityFrameworkCore.PostgreSQL.Design v.1.1.0
 
 - Criar uma pasta chamada Context
 
 - Criar classe para CONEXÃO ao DB (Esta classe por boas praticas deve ser o nome do projeto).
+

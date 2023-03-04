@@ -8,13 +8,13 @@ namespace MP.ApiDotNet6.Domain.Entities
     public sealed class Product
     {
         // Criação de atributos
-        // Confira-se como <private set> para que não sejam acessados fora da classe
+        // Entenda como <private set> para que não sejam acessados fora da classe
         public int Id { get; private set; }
         public string Name { get; private set; }
         public string CodErp { get; private set; }
         public decimal Price { get; private set; }
 
-        // Criando o relacionamento de 1 para N
+        // Criando o relacionamento de 1 para N Person (Pessoa)
         public ICollection<Purchase> Purchases { get; set; }
 
         /* Construtor que valida as informações fornecidas pelo usuário.
